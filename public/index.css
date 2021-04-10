@@ -2,4 +2,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+}
+
+nav {
+  align-items: center;
+  color: white;
+  display: flex;
+  height: 80px;
+  padding: 5px;
+  justify-content: space-around;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  padding: 10px;
+  background-color: black;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.navbar-link {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.navbar-link:focus,
+.navbar-link:hover,
+.navbar-link:active {
+  color: #0f8fa9;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
 }

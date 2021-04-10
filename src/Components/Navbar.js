@@ -9,16 +9,16 @@ const Navbar = () => {
         <Link className="navbar-link" to="/">
           About
         </Link>
-        <Link className="navbar-link" to="/">
+        <Link className="navbar-link" to="/projects">
           Projects
         </Link>
-        <Link className="navbar-link" to="/">
+        <Link className="navbar-link" to="/skills">
           Skills
         </Link>
-        <Link className="navbar-link" to="/">
+        <Link className="navbar-link" to="/resume">
           Resume
         </Link>
-        <Link className="navbar-link" to="/">
+        <Link className="navbar-link" to="/contact">
           Contact
         </Link>
       </nav>

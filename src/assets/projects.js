@@ -15,6 +15,7 @@ export const projects = [
       "https://github.com/MelissaPastore/goodcitizen",
       " https://goodcitizenassistant.herokuapp.com/ ",
     ],
+    img: "../public/GoodCitizenImg.png",
   },
   {
     title: "Vitamon",

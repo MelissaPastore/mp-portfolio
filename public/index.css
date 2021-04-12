@@ -38,3 +38,10 @@ nav {
   text-decoration: underline;
   text-decoration-thickness: 3px;
 }
+
+.projects-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+}

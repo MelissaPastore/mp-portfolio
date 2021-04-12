@@ -5,18 +5,21 @@ import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
+import CardActionArea from "@material-ui/core/CardActionArea";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import AppleIcon from "@material-ui/icons/Apple";
 import GitHub from "../assets/GitHub-Mark-120px-plus.png";
+import Good from "../assets/GoodCitizen.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 700,
   },
   media: {
-    height: 0,
-    paddingTop: "56.25%", // 16:9
+    height: 250,
+    paddingTop: "56.25%",
+    // 16:9
   },
 }));
 
@@ -29,8 +32,8 @@ export default function SingleProject({ project }) {
       <CardMedia
         component="img"
         className={classes.media}
-        src="https://images.app.goo.gl/AMC7EqD162z6fPe18"
-        title="Good Citizen Assistant"
+        image="src/assets/GoodCitizen.png"
+        title="card-img"
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">

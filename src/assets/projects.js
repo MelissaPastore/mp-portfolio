@@ -19,7 +19,7 @@ export const projects = [
   },
   {
     title: "Vitamon",
-    desciption:
+    description:
       "Vitamon is a fun mobile application that allows users to set and achieve goals through a routine and reward system. Vitamons are monsters that are fed through users’ healthy habits and daily accomplishments. You can also add friends to help keep you accountable. Created with a team of three other developers in a three-week sprint.",
     tech: [
       "JavaScript",
@@ -35,7 +35,10 @@ export const projects = [
       "Sequelize",
     ],
     links: ["https://github.com/Vitamon-App/vitamon-frontend"],
+    img: "src/assets/Vitamon2.png",
   },
+
+  ,
   {
     title: "Bookshopper",
     description:
@@ -53,5 +56,6 @@ export const projects = [
       "https://github.com/2011-team-chatime/graceshopper",
       "https://bookshoper1.herokuapp.com/",
     ],
+    img: "src/assets/Bookshopper.png",
   },
 ];

@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -8,46 +8,54 @@ import CardActions from "@material-ui/core/CardActions";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
-import AppleIcon from "@material-ui/icons/Apple";
 import GitHub from "../assets/GitHub-Mark-120px-plus.png";
-import Good from "../assets/GoodCitizen.png";
+import Link from "@material-ui/core/Link";
+import LinkIcon from "@material-ui/icons/Link";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 700,
   },
   media: {
-    height: 250,
-    paddingTop: "56.25%",
+    height: 400,
+    paddingTop: "1%",
     // 16:9
   },
 }));
 
-export default function SingleProject({ project }) {
+const SingleProject = ({ project }) => {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} variant="outlined">
       <CardHeader title={project.title} />
       <CardMedia
         component="img"
         className={classes.media}
-        image="src/assets/GoodCitizen.png"
+        image={project.img}
         title="card-img"
       />
       <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography variant="h6" component="p">
           {project.description}
         </Typography>
       </CardContent>
-      <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <AppleIcon />
+
+      <IconButton aria-label="github">
+        <Link href={project.links[0]}>
+          <img src={GitHub} height={35} width={35} />
+        </Link>
+        <Typography>Code</Typography>
+      </IconButton>
+      {project.links[1] && (
+        <IconButton aria-label="demo">
+          <Link href={project.links[1]}>
+            <LinkIcon fontSize="large" color="action" />
+          </Link>
+          <Typography>Demo</Typography>
         </IconButton>
-        <IconButton aria-label="github">
-          <img src={GitHub} height={40} width={40} />
-        </IconButton>
-      </CardActions>
+      )}
     </Card>
   );
-}
+};
+export default SingleProject;

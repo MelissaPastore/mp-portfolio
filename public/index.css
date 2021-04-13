@@ -24,6 +24,14 @@ nav {
   text-decoration: none;
 }
 
+#projects-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: space-around;
+  align-content: center;
+  color: black;
+}
+
 .navbar-link {
   color: white;
   margin: 10px;
@@ -37,11 +45,4 @@ nav {
   color: #0f8fa9;
   text-decoration: underline;
   text-decoration-thickness: 3px;
-}
-
-.projects-container {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  align-content: center;
 }

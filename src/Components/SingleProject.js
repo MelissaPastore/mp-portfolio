@@ -11,10 +11,13 @@ import Typography from "@material-ui/core/Typography";
 import GitHub from "../assets/GitHub-Mark-120px-plus.png";
 import Link from "@material-ui/core/Link";
 import LinkIcon from "@material-ui/icons/Link";
+import { ReactJs } from "@icons-pack/react-simple-icons";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 700,
+    margin: 15,
+    borderRadius: 10,
   },
   media: {
     height: 400,
@@ -27,7 +30,7 @@ const SingleProject = ({ project }) => {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root} variant="outlined">
+    <Card elevation={10} className={classes.root}>
       <CardHeader title={project.title} />
       <CardMedia
         component="img"
@@ -40,10 +43,19 @@ const SingleProject = ({ project }) => {
           {project.description}
         </Typography>
       </CardContent>
-
-      <IconButton aria-label="github">
+      <CardContent>
+        <Typography variant="h6" component="p">
+          Tech Stack:
+        </Typography>
+        {project.tech.map((tech, i) => {
+          if (typeof tech !== "string") {
+            return tech;
+          } else return <Typography key={i}>{tech}</Typography>;
+        })}
+      </CardContent>
+      <IconButton size="medium" edge="end" aria-label="github">
         <Link href={project.links[0]}>
-          <img src={GitHub} height={35} width={35} />
+          <img src={GitHub} height={30} width={30} />
         </Link>
         <Typography>Code</Typography>
       </IconButton>

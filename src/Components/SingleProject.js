@@ -12,6 +12,7 @@ import GitHub from "../assets/GitHub-Mark-120px-plus.png";
 import Link from "@material-ui/core/Link";
 import LinkIcon from "@material-ui/icons/Link";
 import { ReactJs } from "@icons-pack/react-simple-icons";
+import Chip from "@material-ui/core/Chip";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,6 +24,19 @@ const useStyles = makeStyles((theme) => ({
     height: 400,
     paddingTop: "1%",
     // 16:9
+  },
+  tech: {
+    display: "flex",
+    justifyContent: "center",
+    flexWrap: "wrap",
+    listStyle: "none",
+    padding: theme.spacing(0.5),
+    margin: 0,
+  },
+  chip: {
+    margin: theme.spacing(0.5),
+    backgroundColor: "#13505B",
+    color: "white",
   },
 }));
 
@@ -43,14 +57,16 @@ const SingleProject = ({ project }) => {
           {project.description}
         </Typography>
       </CardContent>
-      <CardContent>
+      <CardContent component="ul" className={classes.tech}>
         <Typography variant="h6" component="p">
           Tech Stack:
         </Typography>
         {project.tech.map((tech, i) => {
-          if (typeof tech !== "string") {
-            return tech;
-          } else return <Typography key={i}>{tech}</Typography>;
+          return (
+            <li key={i}>
+              <Chip className={classes.chip} label={tech} />
+            </li>
+          );
         })}
       </CardContent>
       <IconButton size="medium" edge="end" aria-label="github">

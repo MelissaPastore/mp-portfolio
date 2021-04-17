@@ -5,6 +5,11 @@
   font-family: "Barlow", sans-serif;
 }
 
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
 nav {
   align-items: center;
   color: white;
@@ -12,6 +17,11 @@ nav {
   height: 80px;
   padding: 5px;
   justify-content: space-around;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 #navbar {
@@ -22,6 +32,8 @@ nav {
   background-color: black;
   font-size: 1.5em;
   text-decoration: none;
+  width: 100%;
+  height: 80px;
 }
 
 #projects-container {

@@ -33,10 +33,15 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-around",
     overflow: "hidden",
     backgroundColor: theme.palette.background.paper,
+    padding: 45,
   },
   gridList: {
-    width: 500,
-    height: 450,
+    width: "70%",
+    height: "80%",
+  },
+
+  titleBar: {
+    background: "black",
   },
 }));
 
@@ -67,16 +72,30 @@ const Skills = () => {
 
   return (
     <div className={classes.root}>
-      <GridList cellHeight={150} className={classes.gridList}>
+      <GridList
+        spacing={5}
+        cellHeight={140}
+        cols={4}
+        className={classes.gridList}
+      >
         <GridListTile
           key="Subheader"
           cols={5}
           style={{ height: "auto" }}
         ></GridListTile>
         {tileData.map((tile) => (
-          <GridListTile key={tile.title} align="center">
-            <tile.icon size={80} color={tile.color} />
-            <GridListTileBar title={tile.title} />
+          <GridListTile
+            className={classes.tile}
+            key={tile.title}
+            align="center"
+          >
+            <tile.icon title={tile.title} size={50} color={tile.color} />
+            <GridListTileBar
+              titlePosition="bottom"
+              size={30}
+              title={tile.title}
+              className={classes.titleBar}
+            />
           </GridListTile>
         ))}
       </GridList>

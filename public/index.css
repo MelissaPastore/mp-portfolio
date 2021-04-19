@@ -58,3 +58,12 @@ body {
   text-decoration: underline;
   text-decoration-thickness: 3px;
 }
+
+.date {
+  color: black;
+}
+@media screen and (max-width: 935px) {
+  .date {
+    color: white;
+  }
+}

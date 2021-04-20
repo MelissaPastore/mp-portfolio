@@ -13,12 +13,12 @@ const Resume = () => {
     <div>
       <VerticalTimeline>
         <VerticalTimelineElement
-          contentStyle={{ background: "black", color: "#fff" }}
+          contentStyle={{ background: "#13505B", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  black" }}
           className="vertical-timeline-element--education"
           date="October 2020 - February 2021"
           dateClassName={"date"}
-          iconStyle={{ background: "#0F8FA9", color: "#fff" }}
+          iconStyle={{ background: "black", color: "#fff" }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">Fullstack Academy</h3>
@@ -33,10 +33,10 @@ const Resume = () => {
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          contentStyle={{ background: "black", color: "#fff" }}
+          contentStyle={{ background: "#13505B", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  black" }}
           className="vertical-timeline-element--education"
-          iconStyle={{ background: "#0F8FA9", color: "#fff" }}
+          iconStyle={{ background: "black", color: "#fff" }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">

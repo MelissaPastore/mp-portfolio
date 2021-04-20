@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import Navbar from "./Navbar";
+
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
@@ -20,6 +21,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <div className="App">
         <Navbar />
+
         <div>
           <Switch>
             <Route exact path="/" component={About} />

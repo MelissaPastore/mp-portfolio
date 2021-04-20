@@ -10,15 +10,6 @@
   height: 100vh;
 }
 
-nav {
-  align-items: center;
-  color: white;
-  display: flex;
-  height: 80px;
-  padding: 5px;
-  justify-content: space-around;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -28,12 +19,13 @@ body {
   display: flex;
   justify-content: space-around;
   height: 80px;
+  width: 100%;
   padding: 10px;
   background-color: black;
   font-size: 1.5em;
   text-decoration: none;
-  width: 100%;
-  height: 80px;
+  align-items: center;
+  color: white;
 }
 
 #projects-container {
@@ -65,5 +57,14 @@ body {
 @media screen and (max-width: 935px) {
   .date {
     color: white;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  #navbar {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
   }
 }

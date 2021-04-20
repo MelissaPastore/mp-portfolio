@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import MenuIcon from "@material-ui/icons/Menu";
+import IconButton from "@material-ui/core/IconButton";
 
-const Navbar = () => {
+const Navbar = ({ toggleMenu, showMenu }) => {
   return (
     <nav id="navbar">
       <h1>Melissa Pastore</h1>

@@ -5,14 +5,17 @@
   font-family: "Barlow", sans-serif;
 }
 
-.App {
-  width: 100vw;
-  height: 100vh;
-}
-
 body {
   margin: 0;
   padding: 0;
+}
+
+#home {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5%;
 }
 
 #navbar {
@@ -28,12 +31,27 @@ body {
   color: white;
 }
 
+#home-img {
+  height: 30%;
+  width: 20%;
+}
+
 #projects-container {
   display: flex;
   flex-flow: column wrap;
   align-items: space-around;
   align-content: center;
   color: black;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+.break {
+  flex-basis: 90%;
+  height: 0;
 }
 
 .navbar-link {

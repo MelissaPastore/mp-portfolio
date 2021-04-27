@@ -11,6 +11,7 @@ import StarIcon from "@material-ui/icons/Star";
 const Resume = () => {
   return (
     <div>
+      <div className="resume-head">Education</div>
       <VerticalTimeline>
         <VerticalTimelineElement
           contentStyle={{ background: "#13505B", color: "#fff" }}
@@ -47,6 +48,8 @@ const Resume = () => {
           </h4>
           <p>Graduated Magna Cum Laude</p>
         </VerticalTimelineElement>
+
+        <div className="resume-head">Work Experience</div>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#13505B", color: "#fff" }}

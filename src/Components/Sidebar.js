@@ -16,9 +16,6 @@ const Sidebar = () => {
       <Link className="menu-item" to="/resume">
         Resume
       </Link>
-      <Link className="menu-item" to="/contact">
-        Contact
-      </Link>
     </nav>
   );
 };

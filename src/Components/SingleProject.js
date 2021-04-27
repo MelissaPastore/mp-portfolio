@@ -1,17 +1,14 @@
 import React from "react";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
-import CardActions from "@material-ui/core/CardActions";
-import CardActionArea from "@material-ui/core/CardActionArea";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import GitHub from "../assets/GitHub-Mark-120px-plus.png";
 import Link from "@material-ui/core/Link";
 import LinkIcon from "@material-ui/icons/Link";
-import { ReactJs } from "@icons-pack/react-simple-icons";
 import Chip from "@material-ui/core/Chip";
 
 const useStyles = makeStyles((theme) => ({
@@ -23,7 +20,6 @@ const useStyles = makeStyles((theme) => ({
   media: {
     height: 400,
     paddingTop: "1%",
-    // 16:9
   },
   tech: {
     display: "flex",

@@ -15,12 +15,10 @@ const useStyles = makeStyles((theme) => ({
     overflow: "hidden",
     backgroundColor: theme.palette.background.paper,
     padding: 45,
-    alignItems: "baseline",
-  },
-  gridList: {
     width: "80%",
     height: "80%",
   },
+  gridList: {},
 
   tile: {
     alignSelf: "baseline",
@@ -37,34 +35,36 @@ const Skills = () => {
   const classes = useStyles();
   const theme = useTheme();
 
-  const screenExtraLarge = useMediaQuery(theme.breakpoints.only("xl"));
-  const screenLarge = useMediaQuery(theme.breakpoints.only("lg"));
-  const screenMedium = useMediaQuery(theme.breakpoints.only("md"));
-  const screenSmall = useMediaQuery(theme.breakpoints.only("sm"));
-  const screenExtraSmall = useMediaQuery(theme.breakpoints.only("xs"));
+  const screenXL = useMediaQuery(theme.breakpoints.only("xl"));
+  const screenL = useMediaQuery(theme.breakpoints.only("lg"));
+  const screenM = useMediaQuery(theme.breakpoints.only("md"));
+  const screenS = useMediaQuery(theme.breakpoints.only("sm"));
+  const screenXS = useMediaQuery(theme.breakpoints.only("xs"));
   const screenNarrow = useMediaQuery("(max-width:340px)");
 
   const getScreenWidth = () => {
-    if (screenExtraLarge) {
+    if (screenXL) {
       return 6;
+    } else if (screenL) {
+      return 5;
+    } else if (screenM) {
+      return 4;
+    } else if (screenS) {
+      return 3;
+    } else if (screenXS) {
+      return 2;
     } else if (screenNarrow) {
       return 1;
-    } else if (screenLarge) {
-      return 5;
-    } else if (screenMedium) {
-      return 4;
-    } else if (screenSmall) {
-      return 3;
-    } else if (screenExtraSmall) {
-      return 2;
     } else {
       return 3;
     }
   };
 
   return (
-    <div className={classes.root}>
+    <div>
+      <h1 id="skills">Technical Skills</h1>
       <GridList
+        className={classes.root}
         spacing={5}
         cellHeight={140}
         cols={getScreenWidth()}

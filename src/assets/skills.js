@@ -24,15 +24,15 @@ import {
 
 export const tileData = [
   { title: "CSS", icon: CssThree, color: "#1572B6" },
-  { title: "Express", icon: Express, color: "#000000" },
+  { title: "Express", icon: Express, color: "white" },
   { title: "Git", icon: Git, color: "#F05032" },
-  { title: "GitHub", icon: Github, color: "#181717" },
+  { title: "GitHub", icon: Github, color: "white" },
   { title: "Google Analytics", icon: Googleanalytics, color: "#E37400" },
   { title: "Heroku", icon: Heroku, color: "#430098" },
   { title: "HTML", icon: Html5, color: "#E34F26" },
   { title: "IBM Watson", icon: Ibmwatson, color: "#BE95FF" },
   { title: "Javascript", icon: Javascript, color: "#F7DF1E" },
-  { title: "Json", icon: Json, color: "#000000" },
+  { title: "Json", icon: Json, color: "white" },
   { title: "Material UI", icon: MaterialUi, color: "#0081CB" },
   { title: "Mocha", icon: Mocha, color: "#8D6748" },
   { title: "Node.js", icon: NodeDotJs, color: "#339933" },

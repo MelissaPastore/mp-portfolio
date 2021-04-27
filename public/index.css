@@ -45,6 +45,13 @@ p {
   /* border-radius: 10px; */
 }
 
+#pdf {
+  color: white;
+  text-align: center;
+  margin-top: 3%;
+  font-size: 1.5em;
+}
+
 #skills {
   color: white;
   text-align: center;
@@ -85,16 +92,16 @@ p {
   height: 0;
 }
 
-.navbar-link {
+.link {
   color: white;
   margin: 10px;
   text-decoration: none;
   border-radius: 5px;
 }
 
-.navbar-link:focus,
-.navbar-link:hover,
-.navbar-link:active {
+.link:focus,
+.link:hover,
+.link:active {
   color: #0f8fa9;
   text-decoration: underline;
   text-decoration-thickness: 3px;

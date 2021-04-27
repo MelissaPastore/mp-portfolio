@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 10,
   },
   media: {
-    height: 400,
     paddingTop: "1%",
   },
   tech: {
@@ -34,6 +33,17 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#13505B",
     color: "white",
   },
+  header: {
+    fontWeight: "bold",
+    fontSize: 70,
+  },
+
+  buttonText: {
+    size: 40,
+    fontWeight: "bold",
+    color: "black",
+    margin: 3,
+  },
 }));
 
 const SingleProject = ({ project }) => {
@@ -41,7 +51,7 @@ const SingleProject = ({ project }) => {
 
   return (
     <Card elevation={10} className={classes.root}>
-      <CardHeader title={project.title} />
+      <CardHeader className={classes.header} title={project.title} />
       <CardMedia
         component="img"
         className={classes.media}
@@ -69,14 +79,14 @@ const SingleProject = ({ project }) => {
         <Link href={project.links[0]}>
           <img src={GitHub} height={30} width={30} />
         </Link>
-        <Typography>Code</Typography>
+        <Typography className={classes.buttonText}>Code</Typography>
       </IconButton>
       {project.links[1] && (
         <IconButton aria-label="demo">
           <Link href={project.links[1]}>
             <LinkIcon fontSize="large" color="action" />
           </Link>
-          <Typography>Demo</Typography>
+          <Typography className={classes.buttonText}>Demo</Typography>
         </IconButton>
       )}
     </Card>

@@ -7,6 +7,7 @@ import Link from "@material-ui/core/Link";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    margin: 5,
   },
   paper: {
     height: 60,
@@ -32,6 +33,7 @@ const Home = () => {
         transition into software engineering. I love solving problems and
         telling stories through web and software development.
       </p>
+      <h2>Contact</h2>
       <Grid container className={classes.root} spacing={2}>
         <Grid item xs={12}>
           <Grid container justify="center" spacing={2}>

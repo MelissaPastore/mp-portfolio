@@ -10,9 +10,21 @@ import StarIcon from "@material-ui/icons/Star";
 
 const Resume = () => {
   return (
-    <div>
-      <div className="resume-head">Education</div>
+    <div id="resume">
+      <div id="pdf">
+        <a  className="link" href="src/assets/MelissaPastoreResume2021.pdf" download>
+          Download a PDF
+        </a>
+      </div>
       <VerticalTimeline>
+        <VerticalTimelineElement
+          iconStyle={{ background: "black", color: "#fff" }}
+          contentStyle={{ background: "black", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  black" }}
+          icon={<SchoolIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">Education</h3>
+        </VerticalTimelineElement>
         <VerticalTimelineElement
           contentStyle={{ background: "#13505B", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  black" }}
@@ -48,12 +60,18 @@ const Resume = () => {
           </h4>
           <p>Graduated Magna Cum Laude</p>
         </VerticalTimelineElement>
-
-        <div className="resume-head">Work Experience</div>
+        <VerticalTimelineElement
+          iconStyle={{ background: "black", color: "#fff" }}
+          contentStyle={{ background: "black", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  black" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">Work Experience</h3>
+        </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#13505B", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  #13505B" }}
+          contentArrowStyle={{ borderRight: "black" }}
           date="February 2021 - May 2021"
           dateClassName={"date"}
           iconStyle={{ background: "black", color: "#fff" }}
@@ -147,7 +165,7 @@ const Resume = () => {
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
-          iconStyle={{ background: "#0F8FA9", color: "#fff" }}
+          iconStyle={{ background: "#13505B", color: "#fff" }}
           icon={<StarIcon />}
         />
       </VerticalTimeline>

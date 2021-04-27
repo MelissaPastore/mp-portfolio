@@ -5,16 +5,16 @@ const Navbar = () => {
   return (
     <nav id="navbar">
       <h1>Melissa Pastore</h1>
-      <Link className="navbar-link" to="/">
+      <Link className="link" to="/">
         About
       </Link>
-      <Link className="navbar-link" to="/projects">
+      <Link className="link" to="/projects">
         Projects
       </Link>
-      <Link className="navbar-link" to="/skills">
+      <Link className="link" to="/skills">
         Skills
       </Link>
-      <Link className="navbar-link" to="/resume">
+      <Link className="link" to="/resume">
         Experience
       </Link>
     </nav>

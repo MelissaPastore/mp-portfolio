@@ -6,7 +6,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
-import GitHub from "../assets/GitHub-Mark-120px-plus.png";
+import GitHub from "../../public/assets/GitHub-Mark-120px-plus.png";
 import Link from "@material-ui/core/Link";
 import LinkIcon from "@material-ui/icons/Link";
 import Chip from "@material-ui/core/Chip";

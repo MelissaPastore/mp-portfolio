@@ -42,8 +42,8 @@ jobs:
       - name: Download Build
         uses: actions/download-artifact@v2
         with:
-          name: build
-          path: build
+          name: public
+          path: public
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:

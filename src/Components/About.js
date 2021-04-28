@@ -27,11 +27,19 @@ const Home = () => {
   return (
     <div id="home">
       <img id="home-img" src="src/assets/MPAbout.png" />
-      <p id="about-text">
-        Specializing in full stack JavaScript. After studying journalism and
-        working in public relations and communications, I made a career
-        transition into software engineering. I love solving problems and
-        telling stories through web and software development.
+      <p className="about-text">
+        After studying journalism and working in public relations and
+        communications, I made a career transition into software engineering. I
+        recently completed the Web Development Fellowship at Fullstack Academy,
+        a partnership with the NYC Tech Talent Pipeline. I love solving problems
+        and telling stories through web and software development.
+      </p>
+      <p className="about-text">
+        I look forward to using the communication, management and
+        problem-solving skills I gained in my previous career, along with the
+        technical skills I acquired at Fullstack Academy, to help an
+        organization create and build applications that will make a positive
+        impact on the tech landscape.
       </p>
       <h2>Contact</h2>
       <Grid container className={classes.root} spacing={2}>

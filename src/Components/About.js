@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import { Github, Linkedin, Gmail } from "@icons-pack/react-simple-icons";
 import Link from "@material-ui/core/Link";
-import mpImage from "../../public/assets/MPAbout.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {

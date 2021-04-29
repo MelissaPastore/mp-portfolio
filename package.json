@@ -13,7 +13,7 @@
     "start": "webpack serve --open",
     "test": "echo \"Error: no test specified\" && exit 1",
     "create": "webpack",
-    "build": "webpack"
+    "build": "webpack --config ./webpack.config.js --mode production"
   },
   "keywords": [],
   "author": "",

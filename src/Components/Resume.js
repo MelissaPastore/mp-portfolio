@@ -12,7 +12,11 @@ const Resume = () => {
   return (
     <div id="resume">
       <div id="pdf">
-        <a  className="link" href="src/assets/MelissaPastoreResume2021.pdf" download>
+        <a
+          className="link"
+          href="https://firebasestorage.googleapis.com/v0/b/portfolio-d7d24.appspot.com/o/MelissaPastore2021.pdf?alt=media&token=57c819f3-2a7b-4729-8169-b2d9c8e933b4"
+          download
+        >
           Download a PDF
         </a>
       </div>

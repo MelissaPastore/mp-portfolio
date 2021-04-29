@@ -109,11 +109,13 @@ p {
 }
 
 .date {
-  color: black;
+  color: white;
+  font-weight: bold;
 }
 @media screen and (max-width: 935px) {
   .date {
     color: white;
+    font-weight: bold;
   }
 }
 

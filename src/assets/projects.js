@@ -16,7 +16,7 @@ export const projects = [
       "https://github.com/MelissaPastore/goodcitizen",
       " https://goodcitizenassistant.herokuapp.com/ ",
     ],
-    img: "public/assets/GoodCitizen.png",
+    img: "./../public/assets/GoodCitizen.png",
   },
   {
     title: "Vitamon",
@@ -60,6 +60,6 @@ export const projects = [
       "https://github.com/2011-team-chatime/graceshopper",
       "https://bookshoper1.herokuapp.com/",
     ],
-    img: "public/assets/Bookshopper.png",
+    img: "../../public/assets/Bookshopper.png",
   },
 ];

@@ -9,9 +9,9 @@ module.exports = {
     path: path.join(__dirname, "public"),
     filename: "bundle.js",
   },
-  // devServer: {
-  //   historyApiFallback: true,
-  // },
+  devServer: {
+    historyApiFallback: true,
+  },
   module: {
     rules: [
       {
@@ -39,6 +39,7 @@ module.exports = {
     ],
   },
   resolve: {
+    extensions: [".js", ".jsx"],
     alias: {
       react: path.resolve("./node_modules/react"),
     },

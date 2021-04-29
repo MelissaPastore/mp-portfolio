@@ -27,7 +27,10 @@ const Home = () => {
   const classes = useStyles();
   return (
     <div id="home">
-      <img id="home-img" src={mpImage} />
+      <img
+        id="home-img"
+        src="https://firebasestorage.googleapis.com/v0/b/portfolio-d7d24.appspot.com/o/MPAbout.png?alt=media&token=970aedbe-0ba2-4412-bed7-ec8db60c2646"
+      />
       <p className="about-text">
         After studying journalism and working in public relations and
         communications, I made a career transition into software engineering. I

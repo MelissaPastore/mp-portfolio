@@ -6,10 +6,12 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
-import GitHub from "../../public/assets/GitHub-Mark-120px-plus.png";
 import Link from "@material-ui/core/Link";
 import LinkIcon from "@material-ui/icons/Link";
 import Chip from "@material-ui/core/Chip";
+
+const GitHub =
+  "https://firebasestorage.googleapis.com/v0/b/portfolio-d7d24.appspot.com/o/GitHub-Mark-120px-plus.png?alt=media&token=8a0e5b17-89b4-4ef2-8b6b-253e42258795";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -92,4 +94,5 @@ const SingleProject = ({ project }) => {
     </Card>
   );
 };
+
 export default SingleProject;

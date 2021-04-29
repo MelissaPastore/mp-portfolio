@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, "public"),
     filename: "bundle.js",
-    publicPath: "/public/",
+    publicPath: "/",
   },
   devServer: {
     historyApiFallback: true,
@@ -32,7 +32,7 @@ module.exports = {
         test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
         exclude: /node_modules/,
         use: {
-          loader: "file-loader?name=assets/[name].[ext]",
+          loader: "file-loader",
         },
       },
     ],

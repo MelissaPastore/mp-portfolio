@@ -1,7 +1,4 @@
 import React from "react";
-import goodCitizen from "../../public/assets/GoodCitizen.png";
-import vitamon from "../../public/assets/Vitamon2.png";
-import bookshopper from "../../public/assets/Bookshopper.png";
 
 export const projects = [
   {
@@ -20,7 +17,8 @@ export const projects = [
       "https://github.com/MelissaPastore/goodcitizen",
       " https://goodcitizenassistant.herokuapp.com/ ",
     ],
-    img: goodCitizen,
+    img:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-d7d24.appspot.com/o/GoodCitizen.png?alt=media&token=660b4455-cfa6-4452-bccb-18d8577317e7",
   },
   {
     title: "Vitamon",
@@ -43,7 +41,8 @@ export const projects = [
       "https://github.com/Vitamon-App/vitamon-frontend",
       "https://www.youtube.com/watch?v=tBSBIeprY3k&list=PLx0iOsdUOUmnwv1vrUcoOhP736-omYGMN&index=26&t=1s",
     ],
-    img: vitamon,
+    img:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-d7d24.appspot.com/o/Vitamon2.png?alt=media&token=02062b6b-a0be-45a1-9432-98fb11a876e1",
   },
 
   ,
@@ -64,6 +63,7 @@ export const projects = [
       "https://github.com/2011-team-chatime/graceshopper",
       "https://bookshoper1.herokuapp.com/",
     ],
-    img: bookshopper,
+    img:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-d7d24.appspot.com/o/Bookshopper.png?alt=media&token=fa232287-d7d2-488d-b2bb-b7d91592fbf8",
   },
 ];

@@ -16,7 +16,7 @@ export const projects = [
       "https://github.com/MelissaPastore/goodcitizen",
       " https://goodcitizenassistant.herokuapp.com/ ",
     ],
-    img: "./../public/assets/GoodCitizen.png",
+    img: "../../public/assets/GoodCitizen.png",
   },
   {
     title: "Vitamon",
@@ -39,7 +39,7 @@ export const projects = [
       "https://github.com/Vitamon-App/vitamon-frontend",
       "https://www.youtube.com/watch?v=tBSBIeprY3k&list=PLx0iOsdUOUmnwv1vrUcoOhP736-omYGMN&index=26&t=1s",
     ],
-    img: "public/assets/Vitamon2.png",
+    img: "../../public/assets/Vitamon2.png",
   },
 
   ,

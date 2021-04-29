@@ -26,7 +26,7 @@ const Home = () => {
   const classes = useStyles();
   return (
     <div id="home">
-      <img id="home-img" src="../../public/assets/MPAbout.png" />
+      <img id="home-img" src="public/assets/MPAbout.png" />
       <p className="about-text">
         After studying journalism and working in public relations and
         communications, I made a career transition into software engineering. I

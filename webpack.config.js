@@ -54,6 +54,6 @@ module.exports = {
         { from: "source", to: "dest" },
         { from: "other", to: "public" },
       ],
-    }),npm install copy-webpack-plugin --save-dev
+    }),
   ],
 };

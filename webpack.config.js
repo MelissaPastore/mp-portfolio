@@ -1,15 +1,17 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const isDev = process.env.NODE_ENV === "development";
 
 module.exports = {
+  mode: isDev ? "development" : "production",
   entry: ["./src/index.js"],
   output: {
     path: path.join(__dirname, "public"),
     filename: "bundle.js",
   },
-  devServer: {
-    historyApiFallback: true,
-  },
+  // devServer: {
+  //   historyApiFallback: true,
+  // },
   module: {
     rules: [
       {

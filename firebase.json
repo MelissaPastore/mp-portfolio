@@ -9,4 +9,4 @@
     ],
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   }
-}gg
+}

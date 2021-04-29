@@ -49,11 +49,5 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "public/index.html",
     }),
-    new CopyPlugin({
-      patterns: [
-        { from: "source", to: "dest" },
-        { from: "other", to: "public" },
-      ],
-    }),
   ],
 };

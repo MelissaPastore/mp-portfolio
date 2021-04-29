@@ -1,4 +1,8 @@
 import React from "react";
+import goodCitizen from "../../public/assets/GoodCitizen.png";
+import vitamon from "../../public/assets/Vitamon2.png";
+import bookshopper from "../../public/assets/Bookshopper.png";
+
 export const projects = [
   {
     title: "Good Citizen Assistant",
@@ -16,7 +20,7 @@ export const projects = [
       "https://github.com/MelissaPastore/goodcitizen",
       " https://goodcitizenassistant.herokuapp.com/ ",
     ],
-    img: "../../public/assets/GoodCitizen.png",
+    img: goodCitizen,
   },
   {
     title: "Vitamon",
@@ -39,7 +43,7 @@ export const projects = [
       "https://github.com/Vitamon-App/vitamon-frontend",
       "https://www.youtube.com/watch?v=tBSBIeprY3k&list=PLx0iOsdUOUmnwv1vrUcoOhP736-omYGMN&index=26&t=1s",
     ],
-    img: "../../public/assets/Vitamon2.png",
+    img: vitamon,
   },
 
   ,
@@ -60,6 +64,6 @@ export const projects = [
       "https://github.com/2011-team-chatime/graceshopper",
       "https://bookshoper1.herokuapp.com/",
     ],
-    img: "../../public/assets/Bookshopper.png",
+    img: bookshopper,
   },
 ];

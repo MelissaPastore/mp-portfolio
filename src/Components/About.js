@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import { Github, Linkedin, Gmail } from "@icons-pack/react-simple-icons";
 import Link from "@material-ui/core/Link";
+import mpImage from "../../public/assets/MPAbout.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,7 +27,7 @@ const Home = () => {
   const classes = useStyles();
   return (
     <div id="home">
-      <img id="home-img" src="../../public/assets/MPAbout.png" />
+      <img id="home-img" src={mpImage} />
       <p className="about-text">
         After studying journalism and working in public relations and
         communications, I made a career transition into software engineering. I

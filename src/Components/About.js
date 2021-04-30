@@ -50,7 +50,7 @@ const Home = () => {
           <Grid container justify="center" spacing={2}>
             {icons.map((icon, i) => (
               <Grid key={i} item>
-                <Link href={icon.url}>
+                <Link href={icon.url} target="_blank" rel="noopener noreferrer">
                   <icon.icon size={40} color="white" />
                 </Link>
               </Grid>

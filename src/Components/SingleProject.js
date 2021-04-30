@@ -77,19 +77,19 @@ const SingleProject = ({ project }) => {
           );
         })}
       </CardContent>
-      <IconButton size="medium" edge="end" aria-label="github">
-        <Link href={project.links[0]}>
+      <Link href={project.links[0]} target="_blank" rel="noopener noreferrer">
+        <IconButton size="medium" edge="end" aria-label="github">
           <img src={GitHub} height={30} width={30} />
-        </Link>
-        <Typography className={classes.buttonText}>Code</Typography>
-      </IconButton>
-      {project.links[1] && (
-        <IconButton aria-label="demo">
-          <Link href={project.links[1]}>
-            <LinkIcon fontSize="large" color="action" />
-          </Link>
-          <Typography className={classes.buttonText}>Demo</Typography>
+          <Typography className={classes.buttonText}>Code</Typography>
         </IconButton>
+      </Link>
+      {project.links[1] && (
+        <Link href={project.links[1]} target="_blank" rel="noopener noreferrer">
+          <IconButton aria-label="demo">
+            <LinkIcon fontSize="large" color="action" />
+            <Typography className={classes.buttonText}>Demo</Typography>
+          </IconButton>
+        </Link>
       )}
     </Card>
   );

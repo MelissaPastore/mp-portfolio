@@ -12,30 +12,22 @@ import IconButton from "@material-ui/core/IconButton";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import MenuIcon from "@material-ui/icons/Menu";
 
-function Sidebar() {
-  const [open, setOpen] = useState(false);
+function Sidebar({ open, handleDrawerClose }) {
   const classes = useStyles();
-
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
-
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
 
   console.log("IS IT OPEN", open);
 
   return (
     <div>
-      <IconButton
+      {/* <IconButton
+        onClick={handleDrawerOpen}
         color="inherit"
         aria-label="open drawer"
-        onClick={handleDrawerOpen}
         edge="start"
       >
         <MenuIcon />
-      </IconButton>
+      </IconButton> */}
+
       <Drawer
         className={classes.drawer}
         anchor="right"
@@ -80,8 +72,8 @@ function Sidebar() {
   );
 }
 
-require("react-dom");
-window.React2 = require("react");
-console.log("does react1 = react2", window.React1 === window.React2);
+// require("react-dom");
+// window.React2 = require("react");
+// console.log("does react1 = react2", window.React1 === window.React2);
 
 export default Sidebar;

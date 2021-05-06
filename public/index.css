@@ -37,7 +37,6 @@ p {
   align-items: center;
   color: white;
   border-bottom: 5px ridge#0f8fa9;
-  /* border-radius: 10px; */
 }
 
 #pdf {
@@ -137,12 +136,22 @@ p {
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   #navbar {
     width: 100%;
-    justify-content: center;
     align-items: center;
-    font-size: 0.8em;
+    font-size: 1em;
+  }
+
+  #navbar-heading {
+    margin-left: 25px;
+    align-self: center;
   }
 
   .link {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #menu-button {
     display: none;
   }
 }

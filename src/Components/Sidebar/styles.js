@@ -4,7 +4,7 @@ const drawerWidth = 240;
 
 export const useStyles = makeStyles((theme) => ({
   drawerPaper: {
-    backgroundColor: "#1F1F1F",
+    backgroundColor: "#282c34",
     color: "white",
   },
 

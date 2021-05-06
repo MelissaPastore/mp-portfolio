@@ -51,7 +51,7 @@ function Sidebar({ open, handleDrawerClose }) {
           </ListItem>
           <ListItem>
             <Link className="menu-item" to="/resume">
-              <ListItemText>Resume</ListItemText>
+              <ListItemText>Experience</ListItemText>
             </Link>
           </ListItem>
         </List>

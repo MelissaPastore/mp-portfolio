@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Drawer from "@material-ui/core/Drawer";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -10,24 +10,12 @@ import ListItemText from "@material-ui/core/ListItemText";
 import { useStyles } from "./styles";
 import IconButton from "@material-ui/core/IconButton";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import MenuIcon from "@material-ui/icons/Menu";
 
 function Sidebar({ open, handleDrawerClose }) {
   const classes = useStyles();
 
-  console.log("IS IT OPEN", open);
-
   return (
     <div>
-      {/* <IconButton
-        onClick={handleDrawerOpen}
-        color="inherit"
-        aria-label="open drawer"
-        edge="start"
-      >
-        <MenuIcon />
-      </IconButton> */}
-
       <Drawer
         className={classes.drawer}
         anchor="right"
@@ -71,9 +59,5 @@ function Sidebar({ open, handleDrawerClose }) {
     </div>
   );
 }
-
-// require("react-dom");
-// window.React2 = require("react");
-// console.log("does react1 = react2", window.React1 === window.React2);
 
 export default Sidebar;

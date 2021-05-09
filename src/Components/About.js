@@ -28,6 +28,7 @@ const Home = () => {
     <div id="home">
       <img
         id="home-img"
+        alt="Site creator's image"
         src="https://firebasestorage.googleapis.com/v0/b/portfolio-d7d24.appspot.com/o/MPAbout.png?alt=media&token=970aedbe-0ba2-4412-bed7-ec8db60c2646"
       />
       <p className="about-text">

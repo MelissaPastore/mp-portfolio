@@ -59,6 +59,7 @@ const SingleProject = ({ project }) => {
         className={classes.media}
         image={project.img}
         title="card-img"
+        alt={`A screenshot of the the ${project.title} application`}
       />
       <CardContent>
         <Typography variant="h6" component="p">
@@ -79,7 +80,7 @@ const SingleProject = ({ project }) => {
       </CardContent>
       <Link href={project.links[0]} target="_blank" rel="noopener noreferrer">
         <IconButton size="medium" edge="end" aria-label="github">
-          <img src={GitHub} height={30} width={30} />
+          <img src={GitHub} height={30} width={30} alt="GitHub logo" />
           <Typography className={classes.buttonText}>Code</Typography>
         </IconButton>
       </Link>

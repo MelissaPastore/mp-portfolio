@@ -52,11 +52,6 @@ p {
   margin: 50px;
 }
 
-#home-img {
-  height: 30%;
-  width: 30%;
-}
-
 #projects-container {
   display: flex;
   flex-flow: column wrap;
@@ -162,6 +157,10 @@ p {
 
   .link {
     display: none;
+  }
+
+  #home-img {
+    width: 95%;
   }
 }
 

@@ -107,6 +107,21 @@ p {
   text-decoration-thickness: 3px;
 }
 
+.pdf-link {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.pdf-link:focus,
+.pdf-link:hover,
+.pdf-link:active {
+  color: #0f8fa9;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
 .menu-item {
   color: white;
   margin: 10px;
@@ -141,7 +156,7 @@ p {
   }
 
   #navbar-heading {
-    margin-left: 25px;
+    margin-left: 10px;
     align-self: center;
   }
 
@@ -150,7 +165,7 @@ p {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   #menu-button {
     display: none;
   }

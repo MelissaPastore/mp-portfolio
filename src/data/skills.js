@@ -19,6 +19,7 @@ import {
   ReactJs,
   Redux,
   Travisci,
+  Typescript,
   Webpack,
 } from "@icons-pack/react-simple-icons";
 
@@ -40,7 +41,7 @@ export const tileData = [
   { title: "Postman", icon: Postman, color: "#FF6C37" },
   { title: "React", icon: ReactJs, color: "#61DAFB" },
   { title: "Redux", icon: Redux, color: "#764ABC" },
-  // { title: "Sequelize", icon: Sequelize },
   { title: "Travis CI", icon: Travisci, color: "#3EAAAF" },
+  { title: "TypeScript", icon: Typescript, color: "#3178C6" },
   { title: "Webpack", icon: Webpack, color: "#8DD6F9" },
 ];

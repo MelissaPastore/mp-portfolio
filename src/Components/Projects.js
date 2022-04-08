@@ -3,6 +3,7 @@ import SingleProject from "./SingleProject";
 import { projects } from "../data/projects";
 
 const Projects = () => {
+  
   return (
     <div id="projects-container">
       {projects.map((project) => {

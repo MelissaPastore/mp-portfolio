@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-
-import IconButton from "@material-ui/core/IconButton";
 import { Link } from "react-router-dom";
-import MenuIcon from "@material-ui/icons/Menu";
 import Sidebar from "./Sidebar";
+import IconButton from "@material-ui/core/IconButton";
+import MenuIcon from "@material-ui/icons/Menu";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -20,6 +19,7 @@ const Navbar = () => {
   return (
     <nav id="navbar">
       <h1 id="navbar-heading">Melissa Pastore</h1>
+
       <Sidebar handleDrawerClose={handleDrawerClose} open={open} />
       <Link className="link" to="/">
         About

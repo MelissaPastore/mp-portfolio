@@ -25,18 +25,6 @@ p {
   color: white;
 }
 
-.footer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-color: black;
-  border-top: 3px solid white;
-  padding-top: 3px;
-  margin-top: 5px;
-}
-
 #navbar {
   display: flex;
   justify-content: space-around;
@@ -81,11 +69,6 @@ p {
   color: white;
   margin-left: 56%;
   font-size: 1.5em;
-}
-
-#resume {
-  overflow: hidden;
-  max-width: 100vw;
 }
 
 .about-text {
@@ -170,7 +153,6 @@ p {
   #navbar-heading {
     margin-left: 10px;
     align-self: center;
-    margin-bottom: 10px;
   }
 
   .link {

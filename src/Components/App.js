@@ -1,12 +1,14 @@
-import React from "react";
 import { Route, Switch } from "react-router-dom";
-import Navbar from "./Navbar";
+
 import About from "./About";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 import Projects from "./Projects";
+import React from "react";
 import Resume from "./Resume";
 import Skills from "./Skills";
-import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
+import { createMuiTheme } from "@material-ui/core/styles";
 
 const theme = createMuiTheme({
   typography: {
@@ -28,6 +30,7 @@ const App = () => {
             <Route component={About} />
           </Switch>
         </div>
+        <Footer />
       </div>
     </ThemeProvider>
   );

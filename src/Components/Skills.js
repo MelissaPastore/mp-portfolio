@@ -1,7 +1,7 @@
-import React from "react";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
+import React from "react";
 import { tileData } from "../data/skills";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
@@ -37,7 +37,7 @@ const Skills = () => {
   return (
     <div>
       <h1 id="skills">Technical Skills</h1>
-      <GridList spacing={5} cellHeight={140} cols={getScreenWidth()}>
+      <GridList spacing={5} cellHeight={100} cols={getScreenWidth()}>
         {tileData.map((tile) => (
           <GridListTile key={tile.title} align="center">
             <tile.icon title={tile.title} size={50} color={tile.color} />

@@ -1,4 +1,4 @@
-import { Route, Switch } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 
 import About from "./About";
 import Footer from "./Footer";
@@ -28,6 +28,7 @@ const App = () => {
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/resume" component={Resume} />
             <Route exact path="/skills" component={Skills} />
+            <Redirect to="/" />
           </Switch>
         </div>
         <Footer />

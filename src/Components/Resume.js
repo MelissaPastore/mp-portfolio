@@ -34,7 +34,7 @@ const Resume = () => {
         <VerticalTimelineElement
           contentStyle={{ background: "#4b5c74", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #4b5c74" }}
-          date="July 2021 - Present"
+          date="July 2021 - Sept. 2022"
           dateClassName={"date"}
           iconStyle={{ background: "black", color: "#fff" }}
           icon={<WorkIcon />}

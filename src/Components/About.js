@@ -23,9 +23,8 @@ const About = () => {
         src="https://firebasestorage.googleapis.com/v0/b/portfolio-d7d24.appspot.com/o/MPAbout.png?alt=media&token=970aedbe-0ba2-4412-bed7-ec8db60c2646"
       />
       <p className="about-text">
-        I'm a software engineer, currently working on the frontend team at a
-        fintech startup, with a focus on mobile development. I recently made a
-        career change into software engineering and web development, after
+        I'm a software engineer, currently working as a software engineer at GitHub. 
+        I made a career change into software engineering and web development, after
         spending more than 10 years working in public relations, marketing and
         communications for retail and fashion brands. To help me make this
         transition, I completed the Web Development Fellowship at Fullstack

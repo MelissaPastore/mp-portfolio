@@ -13,7 +13,7 @@ import Chip from "@mui/material/Chip";
 const GitHub =
   "https://firebasestorage.googleapis.com/v0/b/portfolio-d7d24.appspot.com/o/GitHub-Mark-120px-plus.png?alt=media&token=8a0e5b17-89b4-4ef2-8b6b-253e42258795";
 
-const StyledCard = styled(Card)(({ theme }) => ({
+const StyledCard = styled(Card)(({}) => ({
   maxWidth: 700,
   margin: 15,
   borderRadius: 10,
@@ -23,28 +23,22 @@ const StyledCardMedia = styled(CardMedia)({
   paddingTop: "1%",
 });
 
-const TechContainer = styled(CardContent)(({ theme }) => ({
+const TechContainer = styled(CardContent)(({}) => ({
   display: "flex",
-  justifyContent: "center",
+  justifyContent: "flex-start",
   flexWrap: "wrap",
   listStyle: "none",
-  padding: theme.spacing(0.5),
   margin: 0,
 }));
 
-const StyledChip = styled(Chip)(({ theme }) => ({
-  margin: theme.spacing(0.5),
+const StyledChip = styled(Chip)(({}) => ({
+  margin: "4px",
   backgroundColor: "#13505B",
   color: "white",
 }));
 
-const HeaderTypography = styled(Typography)({
-  fontWeight: "bold",
-  fontSize: 70,
-});
-
 const ButtonTypography = styled(Typography)({
-  fontSize: 40,
+  fontSize: 18,
   fontWeight: "bold",
   color: "black",
   margin: 3,
@@ -61,9 +55,7 @@ const SingleProject = ({ project }) => {
         alt={`A screenshot of the the ${project.title} application`}
       />
       <CardContent>
-        <Typography variant="h6" component="p">
-          {project.description}
-        </Typography>
+        <Typography component="p">{project.description}</Typography>
       </CardContent>
       <TechContainer component="ul">
         <Typography variant="h6" component="p">

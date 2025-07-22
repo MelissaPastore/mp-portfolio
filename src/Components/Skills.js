@@ -1,6 +1,5 @@
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-import ImageListItemBar from "@mui/material/ImageListItemBar";
 import React from "react";
 import { tileData } from "../data/skills";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -37,10 +36,10 @@ const Skills = () => {
   return (
     <div>
       <h1 id="skills">Technical Skills</h1>
-      <ImageList gap={5} sx={{ height: 'auto' }} cols={getScreenWidth()}>
+      <ImageList gap={5} sx={{ height: "auto" }} cols={getScreenWidth()}>
         {tileData.map((tile) => {
           const IconComponent = tile.icon;
-          
+
           return (
             <ImageListItem key={tile.title} sx={{ textAlign: "center", height: 120 }}>
               <div style={{ 

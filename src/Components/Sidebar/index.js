@@ -1,32 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Drawer from "@material-ui/core/Drawer";
-import Toolbar from "@material-ui/core/Toolbar";
-import List from "@material-ui/core/List";
-import Divider from "@material-ui/core/Divider";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import { useStyles } from "./styles";
-import IconButton from "@material-ui/core/IconButton";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import Toolbar from "@mui/material/Toolbar";
+import List from "@mui/material/List";
+import Divider from "@mui/material/Divider";
+import ListItem from "@mui/material/ListItem";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import { StyledDrawer } from "./styles";
+import IconButton from "@mui/material/IconButton";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 function Sidebar({ open, handleDrawerClose }) {
-  const classes = useStyles();
-
   return (
     <div>
-      <Drawer
-        className={classes.drawer}
+      <StyledDrawer
         anchor="right"
         elevation={10}
         variant="persistent"
         open={open}
-        classes={{
-          paper: classes.drawerPaper,
-        }}
       >
-        <div className={classes.drawerHeader}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', padding: '0 8px' }}>
           <IconButton color="inherit" onClick={handleDrawerClose}>
             <ChevronRightIcon />
           </IconButton>
@@ -55,7 +48,7 @@ function Sidebar({ open, handleDrawerClose }) {
             </Link>
           </ListItem>
         </List>
-      </Drawer>
+      </StyledDrawer>
     </div>
   );
 }

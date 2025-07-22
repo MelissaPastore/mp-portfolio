@@ -1,9 +1,9 @@
 import "react-vertical-timeline-component/style.min.css";
 
 import React from "react";
-import SchoolIcon from "@material-ui/icons/School";
+import SchoolIcon from "@mui/icons-material/School";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
-import WorkIcon from "@material-ui/icons/Work";
+import WorkIcon from "@mui/icons-material/Work";
 
 export const TimelineElement = ({
   date,

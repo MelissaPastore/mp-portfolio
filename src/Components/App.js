@@ -1,4 +1,4 @@
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import About from "./About";
 import Footer from "./Footer";
@@ -7,32 +7,22 @@ import Projects from "./Projects";
 import React from "react";
 import Resume from "./Resume";
 import Skills from "./Skills";
-import { ThemeProvider } from "@material-ui/styles";
-import { createMuiTheme } from "@material-ui/core/styles";
-
-const theme = createMuiTheme({
-  typography: {
-    fontFamily: `'Barlow', sans-serif;`,
-  },
-});
 
 const App = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <div className="App">
-        <Navbar />
-        <div>
-          <Switch>
-            <Route exact path="/" component={About} />
-            <Route exact path="/projects" component={Projects} />
-            <Route exact path="/resume" component={Resume} />
-            <Route exact path="/skills" component={Skills} />
-            <Route component={About} />
-          </Switch>
-        </div>
-        <Footer />
+    <div className="App">
+      <Navbar />
+      <div>
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="*" element={<About />} />
+        </Routes>
       </div>
-    </ThemeProvider>
+      <Footer />
+    </div>
   );
 };
 

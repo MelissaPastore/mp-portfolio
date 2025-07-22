@@ -1,10 +1,9 @@
-import GridList from "@material-ui/core/GridList";
-import GridListTile from "@material-ui/core/GridListTile";
-import GridListTileBar from "@material-ui/core/GridListTileBar";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
 import React from "react";
 import { tileData } from "../data/skills";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { useTheme } from "@material-ui/core/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
 
 const Skills = () => {
   const theme = useTheme();
@@ -37,18 +36,54 @@ const Skills = () => {
   return (
     <div>
       <h1 id="skills">Technical Skills</h1>
-      <GridList spacing={5} cellHeight={100} cols={getScreenWidth()}>
-        {tileData.map((tile) => (
-          <GridListTile key={tile.title} align="center">
-            <tile.icon title={tile.title} size={50} color={tile.color} />
-            <GridListTileBar
-              titlePosition="bottom"
-              size={25}
-              title={tile.title}
-            />
-          </GridListTile>
-        ))}
-      </GridList>
+      <ImageList gap={5} sx={{ height: "auto" }} cols={getScreenWidth()}>
+        {tileData.map((tile) => {
+          const IconComponent = tile.icon;
+
+          return (
+            <ImageListItem key={tile.title} sx={{ textAlign: "center", height: 120 }}>
+              <div style={{ 
+                display: 'flex', 
+                flexDirection: 'column', 
+                alignItems: 'center', 
+                justifyContent: 'center', 
+                height: '100%',
+                padding: '10px'
+              }}>
+                {/* Render the icon component */}
+                {IconComponent ? (
+                  <IconComponent 
+                    size={50} 
+                    color={tile.color} 
+                    style={{ 
+                      color: tile.color,
+                      filter: tile.color === 'white' ? 'drop-shadow(0 0 2px rgba(255,255,255,0.8))' : 'none'
+                    }} 
+                  />
+                ) : (
+                  <div style={{
+                    width: 50,
+                    height: 50,
+                    backgroundColor: tile.color,
+                    borderRadius: '4px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '12px',
+                    fontWeight: 'bold',
+                    color: tile.color === 'white' ? '#000' : '#fff'
+                  }}>
+                    {tile.title.substring(0, 3).toUpperCase()}
+                  </div>
+                )}
+                <div style={{ marginTop: '8px', fontSize: '12px', fontWeight: 'bold', color: 'white' }}>
+                  {tile.title}
+                </div>
+              </div>
+            </ImageListItem>
+          );
+        })}
+      </ImageList>
     </div>
   );
 };

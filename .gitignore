@@ -8,6 +8,9 @@
 
 # production
 /build
+/public/bundle.js
+/public/bundle.js.LICENSE.txt
+/public/index.html
 
 # misc
 .DS_Store

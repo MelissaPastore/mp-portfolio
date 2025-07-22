@@ -1,47 +1,48 @@
-import { Github, Gmail, Linkedin } from "@icons-pack/react-simple-icons";
+import { SiGmail } from "react-icons/si";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
-import Grid from "@material-ui/core/Grid";
-import Link from "@material-ui/core/Link";
+import Grid from "@mui/material/Grid";
+import Link from "@mui/material/Link";
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { styled } from "@mui/material/styles";
 
 const icons = [
-  { icon: Github, url: "https://github.com/MelissaPastore" },
-  { icon: Linkedin, url: "https://www.linkedin.com/in/melissalpastore/" },
-  { icon: Gmail, url: "mailto: melissa.pastore@gmail.com" },
+  { icon: FaGithub, url: "https://github.com/MelissaPastore", name: "GitHub" },
+  {
+    icon: FaLinkedinIn,
+    url: "https://www.linkedin.com/in/melissalpastore/",
+    name: "LinkedIn",
+  },
+  { icon: SiGmail, url: "mailto: melissa.pastore@gmail.com", name: "Email" },
 ];
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    margin: 5,
-  },
-  paper: {
-    height: 60,
-    width: 60,
-    background: "black",
-  },
+const StyledGrid = styled(Grid)(({}) => ({
+  flexGrow: 1,
+  margin: 5,
 }));
 
 const Footer = () => {
-  const classes = useStyles();
-
   return (
     <div className="footer">
-      <h2>Contact</h2>
-      <Grid container className={classes.root} spacing={2}>
+      <p>Contact</p>
+      <StyledGrid container spacing={2}>
         <Grid item xs={12}>
-          <Grid container justify="center" spacing={2}>
-            {icons.map((icon, i) => (
+          <Grid container justifyContent="center" spacing={2}>
+            {icons.map((iconData, i) => (
               <Grid key={i} item>
-                <Link href={icon.url} target="_blank" rel="noopener noreferrer">
-                  <icon.icon size={35} color="white" />
+                <Link
+                  href={iconData.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "white", textDecoration: "none" }}
+                >
+                  <iconData.icon size={30} color="white" />
                 </Link>
               </Grid>
             ))}
           </Grid>
         </Grid>
-      </Grid>
+      </StyledGrid>
     </div>
   );
 };

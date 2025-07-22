@@ -1,10 +1,10 @@
-import GridList from "@material-ui/core/GridList";
-import GridListTile from "@material-ui/core/GridListTile";
-import GridListTileBar from "@material-ui/core/GridListTileBar";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+import ImageListItemBar from "@mui/material/ImageListItemBar";
 import React from "react";
 import { tileData } from "../data/skills";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { useTheme } from "@material-ui/core/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
 
 const Skills = () => {
   const theme = useTheme();
@@ -37,18 +37,18 @@ const Skills = () => {
   return (
     <div>
       <h1 id="skills">Technical Skills</h1>
-      <GridList spacing={5} cellHeight={100} cols={getScreenWidth()}>
+      <ImageList gap={5} rowHeight={100} cols={getScreenWidth()}>
         {tileData.map((tile) => (
-          <GridListTile key={tile.title} align="center">
+          <ImageListItem key={tile.title} sx={{ textAlign: "center" }}>
             <tile.icon title={tile.title} size={50} color={tile.color} />
-            <GridListTileBar
-              titlePosition="bottom"
+            <ImageListItemBar
+              position="bottom"
               size={25}
               title={tile.title}
             />
-          </GridListTile>
+          </ImageListItem>
         ))}
-      </GridList>
+      </ImageList>
     </div>
   );
 };

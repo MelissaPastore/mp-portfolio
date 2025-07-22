@@ -1,20 +1,6 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    margin: 5,
-  },
-  paper: {
-    height: 60,
-    width: 60,
-    background: "black",
-  },
-}));
 
 const About = () => {
-  const classes = useStyles();
   return (
     <div id="home">
       <img

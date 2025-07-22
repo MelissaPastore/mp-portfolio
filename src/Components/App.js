@@ -7,10 +7,10 @@ import Projects from "./Projects";
 import React from "react";
 import Resume from "./Resume";
 import Skills from "./Skills";
-import { ThemeProvider } from "@material-ui/styles";
-import { createMuiTheme } from "@material-ui/core/styles";
+import { ThemeProvider } from "@mui/material/styles";
+import { createTheme } from "@mui/material/styles";
 
-const theme = createMuiTheme({
+const theme = createTheme({
   typography: {
     fontFamily: `'Barlow', sans-serif;`,
   },

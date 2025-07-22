@@ -6,9 +6,9 @@ import {
 } from "react-vertical-timeline-component";
 
 import React from "react";
-import SchoolIcon from "@material-ui/icons/School";
-import StarIcon from "@material-ui/icons/Star";
-import WorkIcon from "@material-ui/icons/Work";
+import SchoolIcon from "@mui/icons-material/School";
+import StarIcon from "@mui/icons-material/Star";
+import WorkIcon from "@mui/icons-material/Work";
 
 const Resume = () => {
   return (

@@ -1,9 +1,9 @@
 import { Github, Gmail, Linkedin } from "@icons-pack/react-simple-icons";
 
-import Grid from "@material-ui/core/Grid";
-import Link from "@material-ui/core/Link";
+import Grid from "@mui/material/Grid";
+import Link from "@mui/material/Link";
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { styled } from "@mui/material/styles";
 
 const icons = [
   { icon: Github, url: "https://github.com/MelissaPastore" },
@@ -11,27 +11,18 @@ const icons = [
   { icon: Gmail, url: "mailto: melissa.pastore@gmail.com" },
 ];
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    margin: 5,
-  },
-  paper: {
-    height: 60,
-    width: 60,
-    background: "black",
-  },
+const StyledGrid = styled(Grid)(({ theme }) => ({
+  flexGrow: 1,
+  margin: 5,
 }));
 
 const Footer = () => {
-  const classes = useStyles();
-
   return (
     <div className="footer">
       <h2>Contact</h2>
-      <Grid container className={classes.root} spacing={2}>
+      <StyledGrid container spacing={2}>
         <Grid item xs={12}>
-          <Grid container justify="center" spacing={2}>
+          <Grid container justifyContent="center" spacing={2}>
             {icons.map((icon, i) => (
               <Grid key={i} item>
                 <Link href={icon.url} target="_blank" rel="noopener noreferrer">
@@ -41,7 +32,7 @@ const Footer = () => {
             ))}
           </Grid>
         </Grid>
-      </Grid>
+      </StyledGrid>
     </div>
   );
 };

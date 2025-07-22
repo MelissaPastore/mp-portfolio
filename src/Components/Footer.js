@@ -1,4 +1,4 @@
-import { SiGithub, SiGmail } from "@icons-pack/react-simple-icons";
+import { SiGithub, SiGmail } from "react-icons/si";
 
 import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";

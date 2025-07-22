@@ -39,7 +39,6 @@ const Skills = () => {
       <h1 id="skills">Technical Skills</h1>
       <ImageList gap={5} sx={{ height: 'auto' }} cols={getScreenWidth()}>
         {tileData.map((tile) => {
-          // Create a safe reference to the icon component
           const IconComponent = tile.icon;
           
           return (
@@ -52,9 +51,16 @@ const Skills = () => {
                 height: '100%',
                 padding: '10px'
               }}>
-                {/* Safely render the icon component */}
-                {IconComponent && React.isValidElement(<IconComponent />) ? (
-                  <IconComponent title={tile.title} size={50} color={tile.color} />
+                {/* Render the icon component */}
+                {IconComponent ? (
+                  <IconComponent 
+                    size={50} 
+                    color={tile.color} 
+                    style={{ 
+                      color: tile.color,
+                      filter: tile.color === 'white' ? 'drop-shadow(0 0 2px rgba(255,255,255,0.8))' : 'none'
+                    }} 
+                  />
                 ) : (
                   <div style={{
                     width: 50,
@@ -71,7 +77,7 @@ const Skills = () => {
                     {tile.title.substring(0, 3).toUpperCase()}
                   </div>
                 )}
-                <div style={{ marginTop: '8px', fontSize: '12px', fontWeight: 'bold' }}>
+                <div style={{ marginTop: '8px', fontSize: '12px', fontWeight: 'bold', color: 'white' }}>
                   {tile.title}
                 </div>
               </div>

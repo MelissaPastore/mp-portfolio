@@ -40,12 +40,12 @@
     "@babel/polyfill": "^7.12.1",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
-    "@icons-pack/react-simple-icons": "^13.6.0",
     "@mui/icons-material": "^7.2.0",
     "@mui/material": "^7.2.0",
     "caniuse-lite": "^1.0.30001597",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0",
     "react-router-dom": "^7.7.0",
     "react-vertical-timeline-component": "^3.3.3",
     "url-loader": "^4.1.1"

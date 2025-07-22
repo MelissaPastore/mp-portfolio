@@ -1,4 +1,4 @@
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import About from "./About";
 import Footer from "./Footer";
@@ -22,13 +22,13 @@ const App = () => {
       <div className="App">
         <Navbar />
         <div>
-          <Switch>
-            <Route exact path="/" component={About} />
-            <Route exact path="/projects" component={Projects} />
-            <Route exact path="/resume" component={Resume} />
-            <Route exact path="/skills" component={Skills} />
-            <Route component={About} />
-          </Switch>
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="*" element={<About />} />
+          </Routes>
         </div>
         <Footer />
       </div>
